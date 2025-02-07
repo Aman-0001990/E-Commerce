@@ -135,3 +135,23 @@ Set up a Node.js backend server using Express.
 Configured the server to listen on a designated port.
 Integrated MongoDB for efficient data storage.
 Established a connection between the server and MongoDB to confirm successful integration.
+
+
+# Milestone 4: Creating User Model and Controller
+
+### Achievements
+1. **User Model:**
+   - Created a User schema using **Mongoose**.
+   - Defined fields such as `name`, `email`, `password`, and `profileImage`.
+   - Implemented password hashing using **bcryptjs** for security.
+
+2. **User Controller:**
+   - Developed controller functions for user-related actions:
+     - Registering a new user.
+     - Retrieving user information.
+     - Handling user authentication.
+   - Integrated the controller with **Express routes**.
+
+3. **Multer Integration:**
+   - Configured **Multer** for handling file uploads.
+   - Allowed users to upload profile images and store them in a designated folder.
