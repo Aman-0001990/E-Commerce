@@ -156,6 +156,7 @@ Established a connection between the server and MongoDB to confirm successful in
 3. **Multer Integration:**
    - Configured **Multer** for handling file uploads.
    - Allowed users to upload profile images and store them in a designated folder.
+   - milestone_4
 
 
 # Milestone 5: Frontend Development - Sign-Up Page
@@ -188,4 +189,4 @@ In this milestone, I implemented user authentication with password encryption an
 - When the user logs in, the password provided is compared with the hashed password in the database for authentication.
 
 This ensures that sensitive user data, especially the password, is stored securely.
-
+main
