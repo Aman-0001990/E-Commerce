@@ -1,5 +1,5 @@
 {
-  "name": "capstone",
+  "name": "e-commer",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -7,7 +7,7 @@
     "dev": "nodemon/server.js",
     "start": "node server.js"
   },
-  "author": "Ashu",
+  "author": "Aman Rajput",
   "license": "ISC",
   "description": "",
   "dependencies": {
