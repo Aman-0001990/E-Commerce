@@ -193,7 +193,10 @@ In this milestone, I implemented user authentication with password encryption an
 
 This ensures that sensitive user data, especially the password, is stored securely.
 main 
-Milestone 7 Completion Summary
+
+
+
+# Milestone 7 Completion Summary
 I have successfully completed Milestone 7 by implementing the Login Endpoint with proper authentication mechanisms. Below is a step-by-step breakdown of the tasks I accomplished:
 
 ✅ 1. Created the Login Endpoint:
