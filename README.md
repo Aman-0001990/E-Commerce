@@ -156,6 +156,11 @@ Established a connection between the server and MongoDB to confirm successful in
 3. **Multer Integration:**
    - Configured **Multer** for handling file uploads.
    - Allowed users to upload profile images and store them in a designated folder.
+ milestone_6
+ milestone_5
+   - milestone_4
+main
+ main
 
 
 # Milestone 5: Frontend Development - Sign-Up Page
@@ -166,6 +171,10 @@ In this milestone, I built the **Sign-Up Page** using **HTML** and **CSS** and a
 ### Features  
 - **Sign-Up Page**: Created a responsive and user-friendly sign-up form.  
 - **Form Validation**: Added validation for required fields, email format, password matching, and minimum password length.  
+ milestone_6
+
+milestone_5
+ main
 
 # Milestone 6 - User Authentication & Encryption
 
@@ -187,4 +196,23 @@ In this milestone, I implemented user authentication with password encryption an
 - The hashed password is then stored in the database along with other user details like name and email.
 - When the user logs in, the password provided is compared with the hashed password in the database for authentication.
 
-This ensures that sensitive user data, especially the password, is stored securely.
+This ensures that sensitive user data, especially the password, is stored securely. milestone_6
+
+main 
+
+
+
+# Milestone 7 Completion Summary
+I have successfully completed Milestone 7 by implementing the Login Endpoint with proper authentication mechanisms. Below is a step-by-step breakdown of the tasks I accomplished:
+
+✅ 1. Created the Login Endpoint:
+Implemented an API endpoint to accept user credentials (email/username and password).
+Retrieved the corresponding user details from the database based on the provided email/username.
+✅ 2. Validated the Password:
+Used bcrypt to hash the entered password.
+Compared the entered password's hash with the stored hashed password for authentication.
+✅ 3. Ensured Secure Authentication:
+Followed best security practices, ensuring passwords are never stored in plain text.
+Used hashing for password validation instead of decryption, as password hashing is a one-way process.
+With this, Milestone 7 is successfully completed 🎯.
+
