@@ -188,3 +188,11 @@ In this milestone, I implemented user authentication with password encryption an
 - When the user logs in, the password provided is compared with the hashed password in the database for authentication.
 
 This ensures that sensitive user data, especially the password, is stored securely.
+
+# Milestone 8: Product Card Component and Homepage Layout 🚀
+✅ Frontend Product Card Component
+Designed and implemented a reusable Product Card component.
+Utilized props to dynamically render product details like name, image, and price.
+✅ Homepage Layout for Products
+Created a responsive homepage to display multiple Product Cards.
+Used Grid/Flexbox for optimal layout and user experience.
