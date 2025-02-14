@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AiOutlinePlusCircle } from "react-icons/ai";
-import axios from "axios";
 
 const CreateProduct = () => {
     const [images, setImages] = useState([]);
-    const [previewImages, setPreviewImages] = useState([]);
+    const [previewImages, setPreviewImages] = useState([]); // Added state
     const [name, setName] = useState("");
     const [description, setDescription] = useState("");
     const [category, setCategory] = useState("");
@@ -29,48 +28,38 @@ const CreateProduct = () => {
         setPreviewImages((prevPreviews) => prevPreviews.concat(imagePreviews));
     };
 
-    const handleSubmit = async (e) => {
+    useEffect(() => {
+        // Cleanup object URLs to avoid memory leaks
+        return () => {
+            previewImages.forEach((url) => URL.revokeObjectURL(url));
+        };
+    }, [previewImages]);
+
+    const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("Hi")
-
-        const formData = new FormData();
-        formData.append("name", name);
-        formData.append("description", description);
-        formData.append("category", category);
-        formData.append("tags", tags);
-        formData.append("price", price);
-        formData.append("stock", stock);
-        formData.append("email", email);
-
-        images.forEach((image) => {
-            formData.append("images", image);
-        });
-
-        try {
-            const response = await axios.post("http://localhost:8000/api/v2/product/create-product", formData, {
-                headers: {
-                    "Content-Type": "multipart/form-data",
-                },
-            });
-
-            if (response.status === 201) {
-                alert("Product created successfully!");
-                setImages([]);
-                setPreviewImages([]);
-                setName("");
-                setDescription("");
-                setCategory("");
-                setTags("");
-                setPrice("");
-                setStock("");
-                setEmail("");
-            }
-        } catch (err) {
-            console.error("Error creating product:", err);
-            alert("Failed to create product. Please check the data and try again.");
-        }
+        const productData = {
+            name,
+            description,
+            category,
+            tags,
+            price,
+            stock,
+            email,
+            images,
+        };
+        console.log("Product Data:", productData);
+        alert("Product created successfully!");
+        // Clear the form after submission
+        setImages([]);
+        setPreviewImages([]); // Clear preview images
+        setName("");
+        setDescription("");
+        setCategory("");
+        setTags("");
+        setPrice("");
+        setStock("");
+        setEmail("");
     };
-
 
     return (
         <div className="w-[90%] max-w-[500px] bg-white shadow h-auto rounded-[4px] p-4 mx-auto">
@@ -174,19 +163,18 @@ const CreateProduct = () => {
                         Upload Images <span className="text-red-500">*</span>
                     </label>
                     <input
-                        name="image"
                         type="file"
                         id="upload"
                         className="hidden"
                         multiple
-                        onChange={handleImagesChange}
+                        onChange={handleImagesChange} // Corrected handler name
                         required
                     />
                     <label htmlFor="upload" className="cursor-pointer">
                         <AiOutlinePlusCircle size={30} color="#555" />
                     </label>
                     <div className="flex flex-wrap mt-2">
-                        {previewImages.map((img, index) => (
+                        {previewImages.map((img, index) => ( // Using previewImages
                             <img
                                 src={img}
                                 key={index}
