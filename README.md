@@ -325,7 +325,6 @@ Added an Add to Cart button to facilitate easy product purchase.
 ✅ Dynamic Data Rendering
 
 Integrated backend API calls to fetch and display product details dynamically.
-Ensured the page updates based on the selected product. 
 
 
 ## Milestone 17: Adding Products to Cart
@@ -340,6 +339,7 @@ Ensured that product details are properly received from the frontend and stored 
 ✅ Testing and Validation
 Implemented input validation to ensure correct product details are stored.
 Tested API responses to confirm successful cart storage.
+
 
 ## Milestone 18: Fetching Cart Products
 ✅ Backend Cart Retrieval Endpoint
