@@ -379,3 +379,8 @@ Designed a Profile Page displaying profile photo, name, and email.
 Added an Address Section with an "Add Address" button.
 Displayed "No address found" if no address is available.
 Ensured smooth UI updates when adding an address. 🚀
+
+
+##  Milestone 21: Address Form Functionality
+Created an address form capturing user details (country, city, zip code, etc.).
+Integrated navigation from the profile page to the address form.cd
