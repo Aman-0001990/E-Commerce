@@ -384,3 +384,8 @@ Ensured smooth UI updates when adding an address. 🚀
 ##  Milestone 21: Address Form Functionality
 Created an address form capturing user details (country, city, zip code, etc.).
 Integrated navigation from the profile page to the address form.cd
+
+
+##  Milestone 22: Address Storage Functionality
+Developed a backend API endpoint to store user addresses.
+Integrated the address form with the backend.
