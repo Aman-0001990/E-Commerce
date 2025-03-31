@@ -402,9 +402,16 @@ Provided an option to select one address for the order.
 ✅ Backend API Implementation
 
 Created an endpoint to fetch and send all saved addresses of the user.
+
+Ensured authentication and proper error handling.
+
+
+# Milestone 24: Order Summary Page 🛍️
+
 # milestone-24
 
 Milestone 24: Order Summary Page 🛍️
+
 ✅ Display Ordered Products
 
 Listed all products the user is ordering.
@@ -416,4 +423,20 @@ Displayed the selected delivery address.
 Showed the total value of the cart.
 ✅ Place Order Button
 
+
 Added a "Place Order" button at the bottom for final confirmation.
+
+
+
+# Milestone 25: Order Processing Backend ⚙️
+✅ Order API Implementation
+
+Created an endpoint to receive products, user, and address details.
+Retrieved the _id of the user using their email.
+✅ Order Storage
+
+Stored each product as a separate order with the same address.
+Used the existing Order schema to save order details in MongoDB.
+
+Added a "Place Order" button at the bottom for final confirmation.
+
