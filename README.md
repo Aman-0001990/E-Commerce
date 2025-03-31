@@ -443,7 +443,7 @@ Retrieved the _id of the user using their email.
 Used the _id to fetch all orders of the user from the database.
 Sent all user orders in the API response.
 
-#Milestone 27: My Orders Page 🛍️
+# Milestone 27: My Orders Page 🛍️
 ✅ My Orders Page
 
 Created a "My Orders" page to display all user orders.
@@ -455,3 +455,18 @@ Passed the user's email to fetch all orders.
 
 Displayed all user orders on the page.
 Added "My Orders" to the navbar for easy access.
+
+
+# Milestone 28: Order Cancellation Feature
+✅ My Orders Page
+
+Added a Cancel Order button for active orders.
+Hidden the button for canceled orders.
+✅ API Implementation
+
+Created an endpoint to cancel orders.
+Updated order status to canceled in the database.
+✅ UI Integration
+
+Sent API request on button click.
+Updated UI after successful cancellation.
