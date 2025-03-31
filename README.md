@@ -390,7 +390,6 @@ Integrated navigation from the profile page to the address form.cd
 Developed a backend API endpoint to store user addresses.
 Integrated the address form with the backend.
 
-
 # Milestone 23: Address Selection for Orders 🛒
 ✅ Cart Page Enhancement
 
@@ -403,10 +402,16 @@ Provided an option to select one address for the order.
 ✅ Backend API Implementation
 
 Created an endpoint to fetch and send all saved addresses of the user.
+
 Ensured authentication and proper error handling.
 
 
 # Milestone 24: Order Summary Page 🛍️
+
+# milestone-24
+
+Milestone 24: Order Summary Page 🛍️
+
 ✅ Display Ordered Products
 
 Listed all products the user is ordering.
@@ -417,6 +422,7 @@ Displayed the selected delivery address.
 
 Showed the total value of the cart.
 ✅ Place Order Button
+
 
 Added a "Place Order" button at the bottom for final confirmation.
 
@@ -433,6 +439,7 @@ Stored each product as a separate order with the same address.
 Used the existing Order schema to save order details in MongoDB.
 
 
+
 # Milestone 26: Fetch User Orders API 📦
 ✅ Order Retrieval Endpoint
 
@@ -442,3 +449,7 @@ Retrieved the _id of the user using their email.
 
 Used the _id to fetch all orders of the user from the database.
 Sent all user orders in the API response.
+
+Added a "Place Order" button at the bottom for final confirmation.
+
+
