@@ -511,6 +511,7 @@ Used PayPalScriptProvider to integrate PayPal payment options.
 
 Verified transactions using the Sandbox environment.
 
+
 Added a "Place Order" button at the bottom for final confirmation.
 
 # milestone 31: JWT Auth & Member CRUD 🔐
@@ -522,3 +523,16 @@ Stored token in localStorage and protected member routes with auth middleware.
 
 Added full Create, Read, Update, Delete features for gym members.
 Enhanced UI with field icons, top banner, and improved layout for better experience.
+
+
+
+# Milestone 32: Using Dispatch and useSelector for Storing Mail in Global State 📧
+✅ Dispatch Method for Storing Mail in Global State
+
+Implemented Dispatch method on the Login page to store the user email in the global state.
+Ensured that the email is properly stored using Redux to manage the state across pages.
+✅ Accessing Mail in Other Pages
+
+Utilized useSelector to access the stored email in the global state on all other pages.
+Ensured seamless usage of the email across various components without prop drilling.
+
