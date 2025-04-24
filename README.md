@@ -390,7 +390,6 @@ Integrated navigation from the profile page to the address form.cd
 Developed a backend API endpoint to store user addresses.
 Integrated the address form with the backend.
 
-
 # Milestone 23: Address Selection for Orders 🛒
 ✅ Cart Page Enhancement
 
@@ -403,10 +402,16 @@ Provided an option to select one address for the order.
 ✅ Backend API Implementation
 
 Created an endpoint to fetch and send all saved addresses of the user.
+
 Ensured authentication and proper error handling.
 
 
 # Milestone 24: Order Summary Page 🛍️
+
+# milestone-24
+
+Milestone 24: Order Summary Page 🛍️
+
 ✅ Display Ordered Products
 
 Listed all products the user is ordering.
@@ -417,6 +422,7 @@ Displayed the selected delivery address.
 
 Showed the total value of the cart.
 ✅ Place Order Button
+
 
 Added a "Place Order" button at the bottom for final confirmation.
 
@@ -433,6 +439,7 @@ Stored each product as a separate order with the same address.
 Used the existing Order schema to save order details in MongoDB.
 
 
+
 # Milestone 26: Fetch User Orders API 📦
 ✅ Order Retrieval Endpoint
 
@@ -443,7 +450,11 @@ Retrieved the _id of the user using their email.
 Used the _id to fetch all orders of the user from the database.
 Sent all user orders in the API response.
 
+
 # Milestone 27: My Orders Page 🛍️
+
+
+#Milestone 27: My Orders Page 🛍️
 ✅ My Orders Page
 
 Created a "My Orders" page to display all user orders.
@@ -455,6 +466,7 @@ Passed the user's email to fetch all orders.
 
 Displayed all user orders on the page.
 Added "My Orders" to the navbar for easy access.
+
 
 
 # Milestone 28: Order Cancellation Feature
@@ -472,7 +484,6 @@ Sent API request on button click.
 Updated UI after successful cancellation.
 
 
-
 # Milestone 29: PayPal Integration for Online Payments 💳
 ✅ PayPal Developer Setup
 
@@ -487,7 +498,6 @@ Added two payment options: Cash on Delivery (COD) and Online Payment.
 Implemented radio buttons to allow users to select their preferred payment method.
 When "Online Payment" is selected, PayPal buttons will be displayed dynamically.
 
-
 # Milestone 30: PayPal Integration 💳
 ✅ PayPal Account Setup
 
@@ -501,6 +511,9 @@ Used PayPalScriptProvider to integrate PayPal payment options.
 
 Verified transactions using the Sandbox environment.
 
+
+Added a "Place Order" button at the bottom for final confirmation.
+
 # milestone 31: JWT Auth & Member CRUD 🔐
 ✅ JWT Authentication
 
@@ -510,6 +523,7 @@ Stored token in localStorage and protected member routes with auth middleware.
 
 Added full Create, Read, Update, Delete features for gym members.
 Enhanced UI with field icons, top banner, and improved layout for better experience.
+
 
 
 # Milestone 32: Using Dispatch and useSelector for Storing Mail in Global State 📧
@@ -522,7 +536,12 @@ Ensured that the email is properly stored using Redux to manage the state across
 Utilized useSelector to access the stored email in the global state on all other pages.
 Ensured seamless usage of the email across various components without prop drilling.
 
+
 # Milestone 33: JWT Authentication Setup 🔑
+
+
+#Milestone 33: JWT Authentication Setup 🔑
+
 ✅ Install jsonwebtoken Package
 
 Installed jsonwebtoken package via NPM: npm install jsonwebtoken.
@@ -535,6 +554,7 @@ Set maxAge to define the token's expiration time.
 
 Added the generated JWT to the response cookie.
 Configured the cookie to be stored in the browser for subsequent requests.
+
 
 # Milestone 34: Validating JWT Token from Cookie 🔐
 ✅ Extracting JWT from Cookie
